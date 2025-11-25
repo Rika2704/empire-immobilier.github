@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empire Immobilier</title>
+  <style>
+    /* RESET */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+
+    /* HEADER */
+    header { background: #0d3b66; color: white; padding: 20px 0; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: #f4d35e; }
+
+    /* SECTIONS */
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { color: #0d3b66; margin-bottom: 20px; text-align: center; }
+
+    /* À PROPOS */
+    #about p { max-width: 800px; margin: auto; text-align: center; font-size: 1.1rem; }
+
+    /* NOS BIENS */
+    .properties { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .property { border: 1px solid #ccc; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .property:hover { transform: scale(1.03); }
+    .property img { width: 100%; height: 200px; object-fit: cover; }
+    .property-content { padding: 15px; }
+    .property-content h3 { margin-bottom: 10px; }
+    .property-content p { font-size: 0.95rem; }
+
+    /* CONTACT */
+    form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+    button { background: #0d3b66; color: white; border: none; padding: 12px; font-size: 1rem; cursor: pointer; border-radius: 5px; transition: background 0.3s; }
+    button:hover { background: #f4d35e; color: #0d3b66; }
+
+    /* FOOTER */
+    footer { background: #0d3b66; color: white; text-align: center; padding: 20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Empire Immobilier</h1>
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#properties">Nos biens</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>À propos de nous</h2>
+  <p>Empire Immobilier vous accompagne dans tous vos projets immobiliers avec professionnalisme et transparence. Découvrez nos biens et contactez-nous pour concrétiser vos rêves.</p>
+</section>
+
+<section id="properties">
+  <h2>Nos biens</h2>
+  <div class="properties">
+    <div class="property">
+      <img src="https://via.placeholder.com/400x200" alt="Appartement moderne">
+      <div class="property-content">
+        <h3>Appartement moderne</h3>
+        <p>2 chambres, centre-ville, proche de toutes commodités. Parfait pour les jeunes actifs.</p>
+      </div>
+    </div>
+    <div class="property">
+      <img src="https://via.placeholder.com/400x200" alt="Maison familiale">
+      <div class="property-content">
+        <h3>Maison familiale</h3>
+        <p>4 chambres, jardin spacieux, quartier calme. Idéal pour une vie de famille confortable.</p>
+      </div>
+    </div>
+    <div class="property">
+      <img src="https://via.placeholder.com/400x200" alt="Studio cosy">
+      <div class="property-content">
+        <h3>Studio cosy</h3>
+        <p>Parfait pour étudiant ou jeune professionnel, proche des transports et commerces.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contactez-nous</h2>
+  <form>
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
+    <textarea placeholder="Votre message" rows="5" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Empire Immobilier | Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
